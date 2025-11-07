@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* 👇 Add your custom font */
+@font-face {
+  font-family: 'MomoSignature';
+  src: url('./assets/fonts/MomoSignature-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 👇 Create a class to use it */
+.cursive-font {
+  font-family: 'MomoSignature', cursive;
+}
+body{
+  background-color: black;
+  color: white;
+}
