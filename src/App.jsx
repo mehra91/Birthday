@@ -4,7 +4,7 @@ import FirstPage from "./Pages/FirstPage";
 function App() {
     
   return (
-    <div className="  h-90   ">
+    <div className="  h-120   ">
       <FirstPage/>
     </div>
   );

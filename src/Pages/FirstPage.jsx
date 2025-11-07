@@ -36,18 +36,31 @@ const FirstPage = () => {
       )}
 
       {hiVisible && (
-        <button className="leading-snug">
+        <div className="leading-snug">
           
           Hiiii Kashish
           <br/>
           <span className="text-4xl pl-2">(❁´◡`❁)</span>
-        </button>
+           <h3 className='text-white opacity-50' >
+            I have Something For u ...
+           </h3>
+           <p className='animate-bounce'>
+            Happy Birthday
+           </p>
+           <img onClick={()=>{
+                navigate('/second')
+           }} 
+           src="../messageBox.jpg" 
+           alt="GiftBox" className=' h-40 animate-pulse cursor-pointer   transition-transform duration-700 ease-in-out hover:rotate-50  ' />
+
+        </div>
       )}
+
 
       <div className="absolute -top-10 -right-10 -z-10 w-3xs cursor-pointer">
         <img
           src="https://i.pinimg.com/736x/05/60/a9/0560a9a9b86a804a41e32dc786475ccd.jpg"
-          className="h-60 w-auto animate-[spin_10s_linear_infinite]"
+          className="h-60 w-auto animate-[spin_10s_linear_infinite]  cursor-pointer"
         />
       </div>
     </div>
