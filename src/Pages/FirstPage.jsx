@@ -7,12 +7,12 @@ const FirstPage = () => {
   const [hiVisible, setHiVisible] = useState(false);
 
   useEffect(() => {
-    // Show "Oops!!" after 3 seconds
+    
     const oopsTimer = setTimeout(() => {
       setOopsVisible(true);
     }, 3000);
 
-    // Show "Hi Kashish" after 8 seconds (3 + 5)
+     
     const hiTimer = setTimeout(() => {
       setHiVisible(true);
     }, 5000);

@@ -14,9 +14,9 @@ function Second() {
     const updateTimer = () => {
       const now = new Date();
       const currentYear = now.getFullYear();
-      const birthday = new Date(currentYear, 10, 8); // November = 10 (0-indexed)
+      const birthday = new Date(currentYear, 10, 25);  
 
-      if (now.getDate() === 8 && now.getMonth() === 10) {
+      if (now.getDate() === 25 && now.getMonth() === 10) {
         setShowPopup(true);
         setTimeLeft({ days: 0, hours: 0, mins: 0, secs: 0 });
         return;
@@ -63,7 +63,7 @@ function Second() {
       .then(() => {
         alert("💌 Message sent successfully!");
         setMessage("");
-        setIsSent(true); // ✅ show second button
+        setIsSent(true);  
       })
       .catch((err) => {
         alert("❌ Failed to send message. Error: " + err.text);
