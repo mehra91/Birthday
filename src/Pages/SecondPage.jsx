@@ -15,7 +15,7 @@ function Second() {
       const now = new Date();
       const currentYear = now.getFullYear();
       const birthday = new Date(currentYear, 10, 25);  
-       
+      
 
       if (now.getDate() === 25 && now.getMonth() === 10) {
         setShowPopup(true);
